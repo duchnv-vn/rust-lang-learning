@@ -1,3 +1,5 @@
+use std::collections::HashMap;
+
 fn main() {
     println!("----- Hello Rust bootcamp 2024! -----");
 
@@ -197,15 +199,31 @@ fn main() {
     println!("vars = {} {}", var_9, var_10); // cannot print var_8 in this line because it is being borrowed by other vars
     println!("vars = {}", var_8); */
 
+    // ---------------------------------------------------------
+    // SECTION 6: HASH MAP
+
+    let mut user = HashMap::new();
+
+    user.insert("id", "1");
+    user.insert("username", "Duc Huynh");
+    user.insert("age", "27");
+    user.insert("job", "Software developer");
+
+    println!("user information: {:?} {:?}", user, user.get("username"));
+
+    for (key, value) in &user {
+        println!("Key: {} - Value: {}", key, value);
+    }
+
     println!("----- End of main func! -----");
 }
 
-fn write_and_print_fruit(str: &mut String) {
-    println!("str 1 = {}", str);
-    str.push_str(" red");
-    println!("str 2 = {}", str);
-}
+// fn write_and_print_fruit(str: &mut String) {
+//     println!("str 1 = {}", str);
+//     str.push_str(" red");
+//     println!("str 2 = {}", str);
+// }
 
-fn print_fruit(str: &String) {
-    println!("str = {}", str);
-}
+// fn print_fruit(str: &String) {
+//     println!("str = {}", str);
+// }
