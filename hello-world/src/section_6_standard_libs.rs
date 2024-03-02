@@ -17,21 +17,21 @@ pub(crate) fn main() {
 
     // --------------------------------------------------------------------------
     // VECTORS
-    let mut vec_1: Vec<u8> = Vec::new();
-    let mut vec_2: Vec<u8> = vec![1, 2, 3];
+    // let mut vec_1: Vec<u8> = Vec::new();
+    // let mut vec_2: Vec<u8> = vec![1, 2, 3];
 
-    vec_1.push(3);
-    vec_2.push(4);
+    // vec_1.push(3);
+    // vec_2.push(4);
 
-    for number in &mut vec_2 {
-        *number += 1;
-    }
+    // for number in &mut vec_2 {
+    //     *number += 1;
+    // }
 
-    vec_1.iter_mut().for_each(|number| *number = *number * 5);
+    // vec_1.iter_mut().for_each(|number| *number = *number * 5);
 
-    let vec_3: Vec<u8> = vec_1.iter_mut().map(|number| *number * 2).collect();
+    // let vec_3: Vec<u8> = vec_1.iter_mut().map(|number| *number * 2).collect();
 
-    // println!("vec 1: {:?}", vec_1);
-    println!("vec 2: {:?}", vec_2);
-    println!("vec 3: {:?}", vec_3);
+    // // println!("vec 1: {:?}", vec_1);
+    // println!("vec 2: {:?}", vec_2);
+    // println!("vec 3: {:?}", vec_3);
 }
