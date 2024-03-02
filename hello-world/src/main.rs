@@ -3,7 +3,7 @@ mod section_2_basic_data_types;
 mod section_3_control_flows;
 mod section_4_functions_closures;
 mod section_5_stack_heap_ownership_borrowing;
-mod section_6_hash_map;
+mod section_6_standard_libs;
 mod section_7_rust_data_types;
 
 fn main() {
@@ -30,7 +30,7 @@ fn main() {
 
     // ---------------------------------------------------------
     // SECTION 6: HASH MAP
-    section_6_hash_map::main();
+    section_6_standard_libs::main();
 
     // ---------------------------------------------------------
     // SECTION 7: DATA TYPES
