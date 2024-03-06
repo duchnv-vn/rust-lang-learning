@@ -29,4 +29,19 @@ pub fn main() {
 
     // let mut buffer = String::new();
     // println!("data_file: {:?}", data_file.read_to_string(&mut buffer));
+
+    // Unwrap and expect
+    fn get_user_name(username: &str) -> Option<&str> {
+        if username.is_empty() {
+            return None;
+        }
+
+        Some(username)
+    }
+
+    let unwrap_case = get_user_name("user 1").unwrap(); // stop program right away if error
+    let expect_case = get_user_name("user 1").expect("Not be empty"); // stop program right away if error
+
+    println!("unwrap_case: {}", unwrap_case);
+    println!("expect_case: {}", expect_case);
 }
