@@ -1,36 +1,36 @@
-#[derive(Debug)]
-enum Dỉrection {
-    LEFT,
-    RIGHT,
-    TOP,
-    BOTTOM,
-}
+// #[derive(Debug)]
+// enum Dỉrection {
+//     LEFT,
+//     RIGHT,
+//     TOP,
+//     BOTTOM,
+// }
 
-enum Star {
-    Diamond = 1000,
-    Gold = 100,
-    Silver = 10,
-    Copper = 1,
-}
+// enum Star {
+//     Diamond = 1000,
+//     Gold = 100,
+//     Silver = 10,
+//     Copper = 1,
+// }
 
-enum NumberTypes {
-    U32(u32),
-    I32(i32),
-}
+// enum NumberTypes {
+//     U32(u32),
+//     I32(i32),
+// }
 
-pub struct Person {
-    pub first_name: String,
-    pub last_name: String,
-    pub age: u8,
-}
+// pub struct Person {
+//     pub first_name: String,
+//     pub last_name: String,
+//     pub age: u8,
+// }
 
-struct Laptop {
-    pub brand: String,
-    pub model: String,
-    pub ram: u8,
-    pub memory: u16,
-    pub core: u8,
-}
+// struct Laptop {
+//     pub brand: String,
+//     pub model: String,
+//     pub ram: u8,
+//     pub memory: u16,
+//     pub core: u8,
+// }
 
 pub(crate) fn main() {
     // ENUM
@@ -94,20 +94,20 @@ pub(crate) fn main() {
     // println!("Brand name of macbook M1 2: {}", macbook_m1.get_ram())
 }
 
-fn set_number_type(input: i32) -> NumberTypes {
-    let number = match input.is_positive() {
-        true => NumberTypes::U32(input as u32),
-        false => NumberTypes::I32(input),
-    };
-    number
-}
+// fn set_number_type(input: i32) -> NumberTypes {
+//     let number = match input.is_positive() {
+//         true => NumberTypes::U32(input as u32),
+//         false => NumberTypes::I32(input),
+//     };
+//     number
+// }
 
-fn match_direction(direction: &Dỉrection) -> &str {
-    let next_direction = match direction {
-        Dỉrection::LEFT => "Robot go left",
-        Dỉrection::RIGHT => "Robot go right",
-        Dỉrection::TOP => "Robot go top",
-        Dỉrection::BOTTOM => "Robot go dowm",
-    };
-    next_direction
-}
+// fn match_direction(direction: &Dỉrection) -> &str {
+//     let next_direction = match direction {
+//         Dỉrection::LEFT => "Robot go left",
+//         Dỉrection::RIGHT => "Robot go right",
+//         Dỉrection::TOP => "Robot go top",
+//         Dỉrection::BOTTOM => "Robot go dowm",
+//     };
+//     next_direction
+// }

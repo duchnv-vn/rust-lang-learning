@@ -5,6 +5,7 @@ mod section_4_functions_closures;
 mod section_5_stack_heap_ownership_borrowing;
 mod section_6_standard_libs;
 mod section_7_rust_data_types;
+mod section_8_error_handling;
 
 fn main() {
     println!("----- Hello Rust bootcamp 2024! -----");
@@ -35,6 +36,10 @@ fn main() {
     // ---------------------------------------------------------
     // SECTION 7: DATA TYPES
     section_7_rust_data_types::main();
+
+    // ---------------------------------------------------------
+    // SECTION 8: ERROR HANDLING
+    section_8_error_handling::main();
 
     println!("----- End of main func! -----");
 }
