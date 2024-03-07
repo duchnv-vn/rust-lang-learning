@@ -6,6 +6,7 @@ mod section_5_stack_heap_ownership_borrowing;
 mod section_6_standard_libs;
 mod section_7_rust_data_types;
 mod section_8_error_handling;
+mod section_9_generic_type;
 
 fn main() {
     println!("----- Hello Rust bootcamp 2024! -----");
@@ -40,6 +41,10 @@ fn main() {
     // ---------------------------------------------------------
     // SECTION 8: ERROR HANDLING
     section_8_error_handling::main();
+
+    // ---------------------------------------------------------
+    // SECTION 9: GENERIC TYPE
+    section_9_generic_type::main();
 
     println!("----- End of main func! -----");
 }
