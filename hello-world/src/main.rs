@@ -1,3 +1,4 @@
+mod section_10_traits;
 mod section_1_variables;
 mod section_2_basic_data_types;
 mod section_3_control_flows;
@@ -45,6 +46,10 @@ fn main() {
     // ---------------------------------------------------------
     // SECTION 9: GENERIC TYPE
     section_9_generic_type::main();
+
+    // ---------------------------------------------------------
+    // SECTION 10: TRAITS
+    section_10_traits::main();
 
     println!("----- End of main func! -----");
 }
