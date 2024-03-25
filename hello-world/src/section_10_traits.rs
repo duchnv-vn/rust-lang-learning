@@ -150,6 +150,23 @@ pub(crate) fn main() {
             }),
         }
     }
-
     let laptop_2 = define_new_eletronic("laptop");
+
+    // TRAIT OBJECT
+    // let vec: Vec<Box<dyn Electronics>> = vec![Box::new(latop_1), laptop_2];
+    // vec[0].print_all_data()
+
+    // STATIC DISPATCH
+    fn get_brand<T: Electronics>(product: &T) -> String {
+        product.get_brand()
+    }
+    get_brand(&phone_1);
+
+    // DYNAMIC DISPATCH
+    fn get_brands(products: &[&dyn Electronics]) {
+        for product in products {
+            product.get_brand();
+        }
+    }
+    get_brands(&[&latop_1, &phone_1])
 }
